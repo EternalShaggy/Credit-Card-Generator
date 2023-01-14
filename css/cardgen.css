@@ -1,11 +1,15 @@
+body{
+  background-color: #000 !important;
+}
+
+
 .credit-card {
-    margin:auto;
     width: 350px;
     height: 200px;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 2px 2px 4px #ddd;
-    margin: 0 auto;
+    margin: auto;
     overflow: hidden;
     position: relative;
     background-color: #00b5ad;
