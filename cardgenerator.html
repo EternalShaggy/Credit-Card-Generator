@@ -1,26 +1,26 @@
-
 <!DOCTYPE html>
 <html>
     <head>
         <title>Credit Card Generator</title>
         <meta name="description" content="A Free Credit Card Generator">
-        <meta name="keywords" content="credit card, free credit card, credit card generator, free credit card generator">
-        <meta name="viewport" content="width-device-width, intial-scale=1.0">
-        <!-- Include CSS File Here -->
-        <link rel="stylesheet" href="css/cardgen.css"/>
-        <script type="text/javascript" src="cardfunctions.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/cardgen.css">
+        <script src="js/cardfunctions.js"></script>
     </head>
-
-
-  <body>
-    <div class="credit-card">
-      <div class="card-number">1234 5678 9012 3456</div>
-      <div class="card-holder">John Doe</div>
-      <div class="expiration-date">Exp Date: 01/25</div>
-      <div class="cvc">CVC: 123</div>
-      <div class="bank-name">Chis Bank</div>
-    </div>
-
-
-</body>
+    <body>
+        <div class="credit-card-container">
+            <div class="credit-card">
+                <div class="card-number" id="card_number">1234 5678 9012 3456</div>
+                <div class="card-holder">John Doe</div>
+                <div class="expiration-date">Exp Date: <span id="expiration_date">01/25</span></div>
+                <div class="cvc">CVC: <span id="cvc_number">123</span></div>
+                <div class="bank-name">Chis Bank</div>
+            </div>
+            <br>
+            <div class="button-container">
+                <button class="generate-button" onclick="generateCardDetails()">Generate</button>
+                <button class="copy-button" onclick="copyToClipboard()">Copy</button>
+            </div>
+        </div>
+    </body>
 </html>

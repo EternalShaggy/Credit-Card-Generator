@@ -1,73 +1,92 @@
-body{
-  background-color: #000 !important;
+body {
+  background-color: #000;
 }
 
+.credit-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column; /* Change the flex direction to column */
+}
 
 .credit-card {
-    width: 350px;
-    height: 200px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 2px 2px 4px #ddd;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    background-color: #00b5ad;
-    color: white;
-  }
-  
-  /* Define the style of the card number */
-  .card-number {
-    font-family: monospace;
-    font-size: 20px;
-    padding: 20px;
-    margin-top: 50px;
-    text-align: center;
-  }
-  
-  /* Define the style of the card holder name */
-  .card-holder {
-    font-family: monospace;
-    font-size: 18px;
-    padding: 20px;
-    text-align: center;
-    position: absolute;
-    top: 90px;
-    left: 70px;
-  
-  }
-  
-  /* Define the style of the expiration date */
-  .expiration-date {
-    font-family: monospace;
-    font-size: 18px;
-    padding: 20px;
-    text-align: center;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-  }
-  
-  /* Define the style of the CVC code */
-  .cvc {
-    font-family: monospace;
-    font-size: 18px;
-    padding: 20px;
-    text-align: center;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-  }
-  
-  /* Define the style of the bank name */
-  .bank-name {
-    font-family: monospace;
-    font-size: 18px;
-    padding: 20px;
-    text-align: right;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
+  width: 350px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px #ddd;
+  background-color: #00b5ad;
+  color: white;
+  text-align: center;
+  position: relative;
+}
 
- 
+.card-number {
+  font-family: monospace;
+  font-size: 20px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.card-holder {
+  font-family: monospace;
+  font-size: 18px;
+  padding: 20px;
+  position: absolute;
+  top: 90px;
+  left: 70px;
+}
+
+.expiration-date {
+  font-family: monospace;
+  font-size: 18px;
+  padding: 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.cvc {
+  font-family: monospace;
+  font-size: 18px;
+  padding: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.bank-name {
+  font-family: monospace;
+  font-size: 18px;
+  padding: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Add margin to the top of the button container */
+  }
+  
+  .generate-button, .copy-button {
+  background-color: #1DA1F2;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 8px;
+  cursor: pointer;
+  }
+  
+  .generate-button:active, .copy-button:active {
+  background-color: #0d7ebf;
+  }
