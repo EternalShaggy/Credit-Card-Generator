@@ -14,10 +14,9 @@ body {
 .credit-card {
   width: 350px;
   height: 200px;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 8px;
-  box-shadow: 2px 2px 4px #ddd;
-  background-color: #00b5ad;
+  background-color: #303245;
   color: white;
   text-align: center;
   position: relative;
